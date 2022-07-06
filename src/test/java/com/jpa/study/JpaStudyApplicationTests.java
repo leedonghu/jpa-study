@@ -9,16 +9,18 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import entity.User;
+import com.jpa.study.entity.User;
+import com.jpa.study.repository.UserRepository;
+
 import lombok.extern.slf4j.Slf4j;
-import repository.UserRepository;
+
 
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Slf4j
 class JpaStudyApplicationTests {
 	
-	@Autowired
+	@Autowired(required = true)
 	UserRepository userRepository;
 	
 	@Test
