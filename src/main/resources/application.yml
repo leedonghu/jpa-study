@@ -6,4 +6,10 @@ spring:
     password: wnddkdwjdqhcjfl1
     
   jpa :
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
+    properties:
+      hibernate:
+        format_sql : true
+server:
+  port: 8081
