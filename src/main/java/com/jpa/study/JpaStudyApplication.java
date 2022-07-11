@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class JpaStudyApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.servlet.context-path", "/jpa");
 		SpringApplication.run(JpaStudyApplication.class, args);
 	}
 	
